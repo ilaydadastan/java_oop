@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Motorcycle implements Vehicle {
 
-    public String model;
+    private String model;
     public static int year = 2017;
     private static final float fuelEfficiency = 7f;
 
@@ -13,7 +13,7 @@ public class Motorcycle implements Vehicle {
         return fuelEfficiency * 2;
     }
 
-    public static int getCurrentYear() {
+    private static int getCurrentYear() {
         LocalDate currentDate = LocalDate.now();
         return currentDate.getYear();
     }

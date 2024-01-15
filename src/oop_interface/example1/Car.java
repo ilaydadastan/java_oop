@@ -4,8 +4,8 @@ import java.time.LocalDate;
 
 public class Car implements Vehicle {
 
-    public String model;
-    public static final int year = 2022;
+    private String model;
+    private static final int year = 2022;
     private static final float fuelEfficiency = 8.5f;
 
     @Override
@@ -14,7 +14,7 @@ public class Car implements Vehicle {
 
     }
 
-    public static int getCurrentYear() {
+    private static int getCurrentYear() {
         LocalDate currentDate = LocalDate.now();
         return currentDate.getYear();
     }
