@@ -1,0 +1,18 @@
+package oop_collections.example3;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Book b1 = new Book("A Tale of Two Cities", "Charles Dickens", 333);
+        Book b2 = new Book("Harry Potter and the Philosopher's Stone", "J. K. Rowling", 222);
+        Book b3 = new Book("The Little Prince", "Antoine de Saint-Exupéry", 111);
+        Library l1 = new Library();
+        l1.saveBook(b1);
+        l1.saveBook(b2);
+        l1.saveBook(b3);
+        System.out.println(l1.getStringBookMap().values());
+        System.out.println(l1.getStringBookMap().keySet());
+        System.out.println(l1);
+    }
+
+}
