@@ -1,4 +1,4 @@
-package oop_collections.example2;
+package collections.example2;
 
 import java.util.Objects;
 

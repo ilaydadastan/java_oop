@@ -1,4 +1,4 @@
-package oop_collections.example1;
+package collections.example1;
 
 import java.util.HashSet;
 import java.util.Set;
