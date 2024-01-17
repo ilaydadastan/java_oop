@@ -14,7 +14,7 @@ public class School {
         this.sstudents = sstudents;
     }
 
-    public void addStudent(Sstudent sstudent){
+    public void addStudent(Sstudent sstudent) {
         if (sstudents == null) {
             sstudents = new HashSet<>();
         }

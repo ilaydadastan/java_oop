@@ -2,7 +2,7 @@ package oop_abstract.example1;
 
 public class Manager extends Employee {
 
-    public Manager(String firstName, String lastName, String email, int age , float workingHours, float hourlyWage) {
+    public Manager(String firstName, String lastName, String email, int age, float workingHours, float hourlyWage) {
         super(firstName, lastName, email, age, workingHours, hourlyWage);
     }
 

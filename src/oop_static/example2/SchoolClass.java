@@ -13,9 +13,9 @@ public class SchoolClass {
         return student1s;
     }
 
-    private int lastStudentNo =0;
+    private int lastStudentNo = 0;
 
-    public void addStudent(Student student1){
+    public void addStudent(Student student1) {
         if (student1s == null) {
             student1s = new ArrayList<>();
         }
@@ -24,9 +24,9 @@ public class SchoolClass {
         student1s.add(student1);
     }
 
-    public int calculateNumberOfStudentsStartsWith(String character){
+    public int calculateNumberOfStudentsStartsWith(String character) {
         int count = 0;
-        for (Student student1 : student1s){
+        for (Student student1 : student1s) {
             if (student1.getName().startsWith(character)) {
                 count++;
             }
@@ -34,15 +34,15 @@ public class SchoolClass {
         return count;
     }
 
-    public float getAverageAge(){
+    public float getAverageAge() {
         int totalAge = 0;
-        for (Student student1 : student1s){
+        for (Student student1 : student1s) {
             totalAge = student1.getAge() + totalAge;
         }
-        return (totalAge*1.0f)/ student1s.size();
+        return (totalAge * 1.0f) / student1s.size();
     }
 
-    public int calculateTotalNumberOfStudents(){
+    public int calculateTotalNumberOfStudents() {
         return student1s.size();
     }
 

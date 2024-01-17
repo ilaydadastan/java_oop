@@ -1,9 +1,9 @@
 package oop_static.example2;
 
 public class Student {
-    private String name;
-    private String surname;
-    private int age;
+    private final String name;
+    private final String surname;
+    private final int age;
 
     public String getName() {
         return name;
@@ -12,7 +12,6 @@ public class Student {
     public int getAge() {
         return age;
     }
-
 
 
     public int getNo() {

@@ -15,11 +15,11 @@ public class PhoneBook {
         this.personStringMap = personStringMap;
     }
 
-    public void addPerson(Person person){
+    public void addPerson(Person person) {
         if (personStringMap == null) {
             personStringMap = new HashMap<>();
         }
-        if (!personStringMap.values().contains(person)) {
+        if (!personStringMap.containsValue(person)) {
             personStringMap.put(person.getFirstName(), person);
         }
     }

@@ -7,6 +7,7 @@ abstract class Employee {
     int age;
     float workingHours;
     float hourlyWage;
+
     public Employee(String firstName, String lastName, String email, int age, float workingHours, float hourlyWage) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -17,6 +18,7 @@ abstract class Employee {
     }
 
     public abstract float calculateSalary();
+
     public abstract String getTitle();
 
     public void displayInfo() {
@@ -30,7 +32,7 @@ abstract class Employee {
         System.out.println();
     }
 
-    public float calculateOvertimeWage(){
+    public float calculateOvertimeWage() {
         return (workingHours * hourlyWage) - (40 * hourlyWage);
     }
 }

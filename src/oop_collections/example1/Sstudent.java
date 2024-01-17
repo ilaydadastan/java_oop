@@ -39,7 +39,7 @@ public class Sstudent {
     @Override
     public boolean equals(Object sstudent) {
 
-        return (this.getNo() == ((Sstudent)sstudent).getNo());
+        return (this.getNo() == ((Sstudent) sstudent).getNo());
     }
 
     @Override

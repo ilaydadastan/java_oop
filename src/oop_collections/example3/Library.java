@@ -16,7 +16,7 @@ public class Library {
         this.stringBookMap = stringBookMap;
     }
 
-    public void saveBook(Book book){
+    public void saveBook(Book book) {
         if (stringBookMap == null) {
             stringBookMap = new TreeMap<>();
         }
@@ -29,27 +29,27 @@ public class Library {
                 "stringBookMap=" + stringBookMap +
                 '}';
     }
-    public Set<String> getKeysByValue (Book book){
+
+    public Set<String> getKeysByValue(Book book) {
         Set<String> foundKeys = new HashSet<>();
         stringBookMap.forEach((key, value) -> {
             if (value.equals(book)) {
                 foundKeys.add(key);
             }
         });
-    /**
-        for (Map.Entry<String, Book> stringBookEntry: stringBookMap.entrySet()) {
-            if (stringBookEntry.getValue().equals(book)) {
-                foundKeys.add(stringBookEntry.getKey());
-            }
-        }
+        /**
+         for (Map.Entry<String, Book> stringBookEntry: stringBookMap.entrySet()) {
+         if (stringBookEntry.getValue().equals(book)) {
+         foundKeys.add(stringBookEntry.getKey());
+         }
+         }
 
-        stringBookMap.entrySet().forEach(stringBookEntry -> {
-            if (stringBookEntry.getValue().equals(book)) {
-                foundKeys.add(stringBookEntry.getKey());
-            }
-        });
-
-    **/
+         stringBookMap.entrySet().forEach(stringBookEntry -> {
+         if (stringBookEntry.getValue().equals(book)) {
+         foundKeys.add(stringBookEntry.getKey());
+         }
+         });
+         **/
         return foundKeys;
     }
 }

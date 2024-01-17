@@ -1,10 +1,9 @@
 package oop_static.example2;
 
 
-
 public class Main {
 
-    public static void main (String[] args){
+    public static void main(String[] args) {
         SchoolClass schoolClass1 = new SchoolClass();
         schoolClass1.addStudent(new Student("ilayda", "dastan", 23));
         schoolClass1.addStudent(new Student("ahmet can", "kepenek", 32));

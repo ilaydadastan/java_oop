@@ -6,7 +6,7 @@ public class CurrentAccount extends BankAccount {
     }
 
     @Override
-    public float deposit(float amountToAdd){
+    public float deposit(float amountToAdd) {
         balance = balance + amountToAdd + (amountToAdd * 0.01f);
         return balance;
     }
