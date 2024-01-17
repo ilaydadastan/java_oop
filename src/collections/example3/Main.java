@@ -1,6 +1,8 @@
 package collections.example3;
 
 
+import java.util.function.Predicate;
+
 public class Main {
     public static void main(String[] args) {
         Book b1 = new Book("A Tale of Two Cities", "Charles Dickens", 333);
@@ -15,6 +17,11 @@ public class Main {
         System.out.println(l1);
 
         System.out.println(l1.getKeysByValue(b1));
+
+        Predicate<Book> bookPredicate = book -> book.getName().toLowerCase().startsWith("h");
+        l1.getStringBookMap().values().stream()
+                .filter(bookPredicate)
+                .forEach(System.out::println);
     }
 
 }

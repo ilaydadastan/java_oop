@@ -12,6 +12,5 @@ public class Main {
         Predicate<String> searchKeyword  = keyword -> keyword.equals(keywordToSearch);
         boolean compare = keywords.stream().anyMatch(searchKeyword);
         System.out.println(compare);
-
     }
 }
