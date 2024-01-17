@@ -13,6 +13,8 @@ public class Main {
         System.out.println(l1.getStringBookMap().values());
         System.out.println(l1.getStringBookMap().keySet());
         System.out.println(l1);
+
+        System.out.println(l1.getKeysByValue(b1));
     }
 
 }

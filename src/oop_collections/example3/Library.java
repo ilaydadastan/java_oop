@@ -1,6 +1,8 @@
 package oop_collections.example3;
 
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 public class Library {
@@ -26,5 +28,28 @@ public class Library {
         return "Library{" +
                 "stringBookMap=" + stringBookMap +
                 '}';
+    }
+    public Set<String> getKeysByValue (Book book){
+        Set<String> foundKeys = new HashSet<>();
+        stringBookMap.forEach((key, value) -> {
+            if (value.equals(book)) {
+                foundKeys.add(key);
+            }
+        });
+    /**
+        for (Map.Entry<String, Book> stringBookEntry: stringBookMap.entrySet()) {
+            if (stringBookEntry.getValue().equals(book)) {
+                foundKeys.add(stringBookEntry.getKey());
+            }
+        }
+
+        stringBookMap.entrySet().forEach(stringBookEntry -> {
+            if (stringBookEntry.getValue().equals(book)) {
+                foundKeys.add(stringBookEntry.getKey());
+            }
+        });
+
+    **/
+        return foundKeys;
     }
 }
