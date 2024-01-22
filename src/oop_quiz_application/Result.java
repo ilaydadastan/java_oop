@@ -19,8 +19,6 @@ public class Result implements IResult {
         System.out.println("Wrong Answers: " + wrongAnswers);
         System.out.println("Percentage: " + showPercentage(correctAnswers, totalQuestions));
         System.out.println("Overall Performance: " + showPerformance(showPercentage(totalQuestions, correctAnswers)));
-
-
     }
 
     @Override
